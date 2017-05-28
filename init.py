@@ -24,6 +24,6 @@ image = [
 
 
 printerOBJ = Printer(motorX, motorY, motorZ, nozzle, image);
-print(printerOBJ.nozzle)
+
 printerOBJ.print_level(0);
 

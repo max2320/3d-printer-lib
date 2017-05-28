@@ -4,6 +4,7 @@ class Pin:
   def __init__(self, label, mode):
     self.state = False
     self.label = label
+    print mode
     self.set_mode(mode)
 
 
