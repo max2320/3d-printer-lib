@@ -1,7 +1,7 @@
 import CHIP_IO.GPIO as GPIO
 
 class Pin:
-  def __init__(self, label, mode):
+  def __init__(self, label, mode = 'OUT'):
     self.state = False
     self.label = label
     print mode
