@@ -43,11 +43,11 @@ class Motor:
     time.sleep(self.default_wait / self.velocity)
 
   def next_position(self):
-    self.step(this.turn, "F")
+    self.step(self.turn, "F")
     self.position += 1
 
   def back_position(self):
-    self.step(this.turn, "F")
+    self.step(self.turn, "F")
     self.position -= 1
 
   def move_to(self, destination):
@@ -60,7 +60,7 @@ class Motor:
 
 class Nozzle(Motor):
   def do_print(self):
-    self.step(this.turn, "F")
+    self.step(self.turn, "F")
 
 
 
