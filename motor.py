@@ -49,7 +49,7 @@ class Motor:
     self.position -= 1
 
   def move_to(destination):
-    while destination == destination
+    while destination != destination :
       if destination > self.position:
         self.next_position()
       else:
