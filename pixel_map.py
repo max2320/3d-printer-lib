@@ -1,5 +1,5 @@
 class PixelMap:
-  def init(self, imageMap):
+  def __init__(self, imageMap):
     self.Z = len(imageMap)
     self.X = len(imageMap[0])
     self.Y = len(imageMap[0][0])
