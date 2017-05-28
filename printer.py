@@ -1,7 +1,6 @@
 from pixel_map import PixelMap
 from motor import Motor, Nozzle
 
-
 class Printer:
   def __init__(self, motorX, motorY, motorZ, nozzle, imageMap):
     self.motor_X = Motor(motorX[0], motorX[1])

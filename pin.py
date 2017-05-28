@@ -4,8 +4,9 @@ class Pin:
   def __init__(self, label, flux = "OUT"):
     self.state = False
     self.label = label
-    
+
     self.set_flux(flux)
+    self.set_state(False)
 
   def set_flux(self, flux):
     if flux == "IN":
