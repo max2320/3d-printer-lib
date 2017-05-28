@@ -9,7 +9,6 @@ motorX=['CSID0','CSID1']
 motorY=['CSID2','CSID3']
 motorZ=['CSID4','CSID5']
 nozzle=['CSID6','CSID7']
-print motorX
 
 image = [
   [
@@ -26,7 +25,7 @@ image = [
 ]
 
 
-#printerOBJ = Printer(motorX, motorY, motorZ, nozzle, image);
+printerOBJ = Printer(motorX, motorY, motorZ, nozzle, image);
 
-#printerOBJ.print_level(0);
+printerOBJ.print_level(0);
 
