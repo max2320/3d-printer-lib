@@ -20,8 +20,8 @@ class PixelMap:
 
       self.tensor.append(level)
 
-  def set_pixel(x, y, z, state):
+  def set_pixel(self, x, y, z, state):
     self.tensor[x][y][z] = state
 
-  def get_pixel(x, y, z):
+  def get_pixel(self, x, y, z):
     return self.tensor[x][y][z]

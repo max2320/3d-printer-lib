@@ -10,7 +10,7 @@ class Printer:
     self.nozzle = Nozzle(nozzle[0], nozzle[1])
     self.image = pixel_map(imageMap)
   
-  def print_level(z):
+  def print_level(self, z):
     for x in range(0, self.image.X):
       self.motor_X.move_to(x)
       

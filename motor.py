@@ -7,11 +7,9 @@ DEFAULT_POSITION_STEP = 1
 
 class Motor:
   def __init__(self, directionIO, stepIO):
-    self.directionIO = Pin(directionIO)
-    self.directionIO.set_flux('OUT')
-
-    self.stepIO = Pin(stepIO)
-    self.stepIO.set_flux('OUT')
+    self.directionIO = Pin(directionIO, 'OUT')
+    
+    self.stepIO = Pin(stepIO, 'OUT')
 
     self.direction = False
     self.velocity = DEFAULT_VELOCITY
@@ -20,7 +18,7 @@ class Motor:
     self.position = 0
     self.turn = DEFAULT_POSITION_STEP
 
-  def set_direction(direction):
+  def set_direction(self, direction):
     if direction == "F":
       self.direction = True
     else: 
@@ -28,11 +26,11 @@ class Motor:
     self.directionIO.setState(self.direction)
 
 
-  def step(counter, direction):
+  def step(self, counter, direction):
     self.set_direction(direction)
     self.do_step(counter)
 
-  def do_step(counter):
+  def do_step(self, counter):
     while counter < 0:
       self.send_step()
       counter -=1
@@ -52,7 +50,7 @@ class Motor:
     self.step(this.turn, "F")
     self.position -= 1
 
-  def move_to(destination):
+  def move_to(self, destination):
     while destination != destination :
       if destination > self.position:
         self.next_position()
