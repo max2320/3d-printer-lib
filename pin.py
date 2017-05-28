@@ -1,15 +1,14 @@
 import CHIP_IO.GPIO as GPIO
 
 class Pin:
-  def __init__(self, label, mode = 'OUT'):
+  def __init__(self, label, flux = 'OUT'):
     self.state = False
     self.label = label
-    print mode
-    self.set_mode(mode)
 
+    self.set_flux(flux)
 
-  def set_mode(mode):
-    if mode == "IN":
+  def set_flux(flux):
+    if flux == "IN":
       GPIO.setup(self.label, GPIO.IN)
     else:
       GPIO.setup(self.label, GPIO.OUT)
