@@ -5,7 +5,7 @@ class Pin:
     self.state = False
     self.label = label
 
-    self.set_flux(flux)
+    # self.set_flux(flux)
 
   def set_flux(flux):
     if flux == "IN":

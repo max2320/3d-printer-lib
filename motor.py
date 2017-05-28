@@ -8,8 +8,10 @@ DEFAULT_POSITION_STEP = 1
 class Motor:
   def __init__(self, directionIO, stepIO):
     self.directionIO = Pin(directionIO)
-    
+    self.directionIO.set_flux('OUT')
+
     self.stepIO = Pin(stepIO)
+    self.stepIO.set_flux('OUT')
 
     self.direction = False
     self.velocity = DEFAULT_VELOCITY
