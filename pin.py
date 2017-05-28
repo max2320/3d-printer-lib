@@ -9,6 +9,7 @@ class Pin:
     self.set_state(False)
 
   def set_flux(self, flux):
+    GPIO.cleanup(self.label)
     if flux == "IN":
       GPIO.setup(self.label, GPIO.IN)
     else:
