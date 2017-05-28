@@ -2,7 +2,7 @@ from pin import Pin
 import time
 
 DEFAULT_VELOCITY = 5
-DEFAULT_WAIT = 5
+DEFAULT_WAIT = 0.005
 DEFAULT_POSITION_STEP = 1
 
 class Motor:

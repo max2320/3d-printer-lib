@@ -1,5 +1,5 @@
 import CHIP_IO.GPIO as GPIO
-
+import time
 class Pin:
   def __init__(self, label, flux = "OUT"):
     self.state = False
@@ -17,6 +17,7 @@ class Pin:
 
   def send_signal(self):
     self.set_state(True)
+    time.sleep(0.0001)
     self.set_state(False)
 
   def set_state(self, state):
