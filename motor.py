@@ -35,18 +35,18 @@ class Motor:
       self.send_step()
       counter -=1
 
-  def send_step():
+  def send_step(self):
     self.stepIO.send_signal()
     self.wait_time()
 
-  def wait_time():
+  def wait_time(self):
     time.sleep(self.default_wait / self.velocity)
 
-  def next_position():
+  def next_position(self):
     self.step(this.turn, "F")
     self.position += 1
 
-  def back_position():
+  def back_position(self):
     self.step(this.turn, "F")
     self.position -= 1
 
@@ -59,7 +59,7 @@ class Motor:
 
 
 class Nozzle(Motor):
-  def do_print():
+  def do_print(self):
     self.step(this.turn, "F")
 
 

@@ -15,7 +15,7 @@ class Pin:
     else:
       GPIO.setup(self.label, GPIO.OUT)
 
-  def send_signal():
+  def send_signal(self):
     self.set_state(True)
     self.set_state(False)
 
@@ -27,5 +27,5 @@ class Pin:
     else:
       GPIO.output(self.label, GPIO.LOW)
 
-  def get_state():
+  def get_state(self):
     return GPIO.input(self.label)    

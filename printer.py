@@ -19,7 +19,7 @@ class Printer:
         if self.image.get_pixel(x, y, z) : 
           self.nozzle.do_print()
         
-  def print_levels():
+  def print_levels(self):
     for z in range(0, self.image.Z):
       self.print_level(z)
 
