@@ -7,21 +7,8 @@ class PixelMap:
     print "X: %s", self.X
     print "Y: %s", self.Y
 
-    self.tensor = []
-
-    for z in range(0, self.Z):
-      level = [];
-
-      for x in range(0, self.X):
-        row = []
-        
-        for y in range(0, self.Y):
-          row.append(imageMap[z][x][y])
-
-        self.tensor.append(row)
-
-      self.tensor.append(level)
-
+    self.tensor = imageMap
+    
   def set_pixel(self, x, y, z, state):
     self.tensor[x][y][z] = state
 
