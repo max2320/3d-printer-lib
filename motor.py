@@ -57,7 +57,7 @@ class Motor:
 
 
 class Nozzle(Motor):
-  def print():
+  def do_print():
     self.step(this.turn, "F")
 
 

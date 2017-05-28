@@ -17,8 +17,8 @@ class Printer:
       for y in range(0, self.image.Y):
         self.motor_Y.move_to(x)
       
-        if self.image.get_pixel(x, y, z):
-          self.nozzle.print()
+        if self.image.get_pixel(x, y, z) : 
+          self.nozzle.do_print()
         
   def print_levels():
     for z in range(0, self.image.Z):
