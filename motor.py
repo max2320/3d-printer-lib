@@ -51,11 +51,12 @@ class Motor:
     self.position -= 1
 
   def move_to(self, destination):
-    if destination > self.position:
-      self.next_position()
-    else:
-      self.back_position()
-    self.move_to(self, destination)
+    if destination != self.position 
+      if destination > self.position:
+        self.next_position()
+      else:
+        self.back_position()
+      self.move_to(self, destination)
 
 
 class Nozzle(Motor):
