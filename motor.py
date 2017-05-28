@@ -31,7 +31,7 @@ class Motor:
     self.do_step(counter)
 
   def do_step(self, counter):
-    while counter < 0:
+    while counter > 0:
       self.send_step()
       counter -=1
 
@@ -56,7 +56,7 @@ class Motor:
         self.next_position()
       else:
         self.back_position()
-      self.move_to(self, destination)
+      self.move_to(destination)
 
 
 class Nozzle(Motor):
