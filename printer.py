@@ -14,7 +14,7 @@ class Printer:
       self.motor_X.move_to(x)
       
       for y in range(0, self.image.Y):
-        self.motor_Y.move_to(x)
+        self.motor_Y.move_to(y)
       
         if self.image.get_pixel(x, y, z) : 
           self.nozzle.do_print()
