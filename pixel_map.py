@@ -1,22 +1,22 @@
 class PixelMap:
   def __init__(self, imageMap):
     self.z = len(imageMap)
-    print "Z: %s", self.z
     self.x = len(imageMap[0])
-    print "X: %s", self.x
     self.y = len(imageMap[0][0])
+    print "Z: %s", self.z
+    print "X: %s", self.x
     print "Y: %s", self.y
 
     self.tensor = []
 
-    for i in range(0, self.z):
+    for z in range(0, self.z):
       level = [];
 
-      for i in range(0, self.x):
+      for x in range(0, self.x):
         row = []
         
-        for i in range(0, self.y):
-          row.append(imageMap[self.z][self.x][self.y])
+        for y in range(0, self.y):
+          row.append(imageMap[z][x][y])
 
         self.tensor.append(row)
 
