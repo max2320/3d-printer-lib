@@ -4,7 +4,7 @@ from motor import Motor, Nozzle
 class Printer:
   def __init__(self, motorX, motorY, motorZ, nozzle, imageMap):
     self.motor_X = Motor(motorX[0], motorX[1])
-    self.motor_Y = Motor(motorX[0], motorX[1])
+    self.motor_Y = Motor(motorY[0], motorY[1])
     self.motor_Z = Motor(motorZ[0], motorZ[1])
     self.nozzle = Nozzle(nozzle[0], nozzle[1])
     self.image = PixelMap(imageMap)
