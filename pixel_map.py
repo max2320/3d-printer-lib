@@ -9,14 +9,14 @@ class PixelMap:
 
     self.tensor = []
 
-    for i in range(0, z):
+    for i in range(0, self.z):
       level = [];
 
-      for i in range(0, x):
+      for i in range(0, self.x):
         row = []
         
-        for i in range(0, y):
-          row.append(imageMap[z][x][y])
+        for i in range(0, self.y):
+          row.append(imageMap[self.z][self.x][self.y])
 
         self.tensor.append(row)
 
