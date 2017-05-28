@@ -26,4 +26,5 @@ class PixelMap:
     self.tensor[x][y][z] = state
 
   def get_pixel(self, x, y, z):
-    return self.tensor[x][y][z]
+    return self.tensor[x][y][z] == 1
+
