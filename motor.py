@@ -47,7 +47,7 @@ class Motor:
     self.position += 1
 
   def back_position(self):
-    self.step(self.turn, "F")
+    self.step(self.turn, "B")
     self.position -= 1
 
   def move_to(self, destination):
