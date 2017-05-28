@@ -23,7 +23,7 @@ class Motor:
       self.direction = True
     else: 
       self.direction = False
-    self.directionIO.setState(self.direction)
+    self.directionIO.set_state(self.direction)
 
 
   def step(self, counter, direction):
