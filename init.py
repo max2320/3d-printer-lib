@@ -5,10 +5,10 @@ GPIO.cleanup()
 
 # Motor(direction, step)
 
-motorX=['CSID0','CSID1']
-motorY=['CSID2','CSID3']
-motorZ=['CSID4','CSID5']
-nozzle=['CSID6','CSID7']
+motorX=['CSID3', 'CSID2']
+motorY=['CSID1', 'CSID0']
+motorZ=['CSID5', 'CSID4']
+nozzle=['CSID7', 'CSID6']
 
 image = [
   [
@@ -28,4 +28,3 @@ image = [
 printerOBJ = Printer(motorX, motorY, motorZ, nozzle, image);
 
 printerOBJ.print_level(0);
-
