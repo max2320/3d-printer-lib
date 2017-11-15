@@ -1,14 +1,14 @@
 from pin import Pin
 import time
 
-DEFAULT_VELOCITY = 5
+DEFAULT_VELOCITY = 120
 DEFAULT_WAIT = 0.5
 DEFAULT_POSITION_STEP = 5
 
 class Motor:
   def __init__(self, directionIO, stepIO):
     self.directionIO = Pin(directionIO, 'OUT')
-    
+
     self.stepIO = Pin(stepIO, 'OUT')
 
     self.direction = False
@@ -21,7 +21,7 @@ class Motor:
   def set_direction(self, direction):
     if direction == "F":
       self.direction = True
-    else: 
+    else:
       self.direction = False
     self.directionIO.set_state(self.direction)
 
@@ -62,6 +62,3 @@ class Motor:
 class Nozzle(Motor):
   def do_print(self):
     self.step(self.turn, "F")
-
-
-

@@ -6,8 +6,8 @@ GPIO.cleanup()
 # Motor(direction, step)
 
 motorX=['CSID1', 'CSID0']
-motorZ=['CSID3', 'CSID2']
-motorY=['CSID5', 'CSID4']
+motorZ=['CSID5', 'CSID4']
+motorY=['CSID3', 'CSID2']
 nozzle=['CSID7', 'CSID6']
 
 
