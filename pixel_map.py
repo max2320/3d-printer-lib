@@ -10,11 +10,10 @@ class PixelMap:
     self.tensor = imageMap
 
   def set_pixel(self, x, y, z, state):
-    print '%s, %s, %s, %s', x, y, z, state
+    print 'x, y, z, state', x, y, z, state
     self.tensor[z][x][y] = state
 
   def get_pixel(self, x, y, z):
-    print '%s, %s, %s', x, y, z
+    print 'x, y, z', x, y, z
 
     return self.tensor[z][x][y] == 1
-
